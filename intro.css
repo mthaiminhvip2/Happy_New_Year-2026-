@@ -344,7 +344,8 @@ body{
     height: 100%;
     pointer-events: none;
 }
-.number2023{
+.number2023
+{
     position: absolute;
     display: flex;
     top: 50%;

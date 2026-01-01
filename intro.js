@@ -52,3 +52,22 @@ buttonSong.onclick= function(){
         mySong.play()
     }
 }
+// Chạy code khi trang đã tải xong
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('.slider-img');
+    let currentIndex = 0;
+
+    // Kiểm tra xem có ảnh nào trong slider không để tránh lỗi
+    if (images.length > 0) {
+        setInterval(() => {
+            // Bước 1: Ẩn ảnh hiện tại
+            images[currentIndex].classList.remove('active');
+
+            // Bước 2: Tăng vị trí lên 1, nếu vượt quá số lượng ảnh thì quay về 0
+            currentIndex = (currentIndex + 1) % images.length;
+
+            // Bước 3: Hiện ảnh tiếp theo
+            images[currentIndex].classList.add('active');
+        }, 3000); // 3000ms = 3 giây thay đổi một lần
+    }
+});

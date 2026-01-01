@@ -2143,3 +2143,28 @@ h2 {
     top: -600px;
   }
 }
+/* Thiết lập khung chứa hình thoi */
+.rhombus-img {
+    position: relative;
+    overflow: hidden; /* Đảm bảo ảnh không tràn ra ngoài hình thoi */
+}
+
+/* Định dạng chung cho các ảnh trong slide */
+.slider-img {
+    position: absolute; /* Chồng tất cả ảnh lên cùng 1 tọa độ */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giữ cho ảnh không bị méo khi vào khung */
+    opacity: 0;        /* Ẩn ảnh đi */
+    transition: opacity 1s ease-in-out; /* Hiệu ứng chuyển cảnh mượt */
+    z-index: 1;
+}
+
+/* Chỉ hiện ảnh có class active */
+.slider-img.active {
+    opacity: 1;
+    z-index: 2;
+    position: relative; /* Giúp duy trì kích thước khung hình thoi */
+}

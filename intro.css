@@ -1775,7 +1775,7 @@ h2 {
   background: rgb(255, 216, 138);
 
   /* THÊM 2 DÒNG DƯỚI ĐÂY */
-  padding-top: 20px;   /* Tạo khoảng cách phía trên để không mất tiêu đề */
+  padding-top: 10px;   /* Tạo khoảng cách phía trên để không mất tiêu đề */
   overflow-y: auto;    /* Cho phép cuộn nội dung nếu thư quá dài trên Mobile */
 }
 .box-content .right .content .title {
@@ -1788,9 +1788,11 @@ h2 {
   overflow: visible;
 }
 .box-content .right .content .title h1 {
-  margin-top: 0 !important;
-  transition: 0.5s;
-  font_size: 26px;
+  display: block; /* Ép thành khối để dễ căn giữa */
+  text-align: center; /* Căn giữa văn bản */
+  line-height: 1.2; /* Khoảng cách giữa các dòng chữ */
+  font-size: 24px;
+  width: 100%;
 }
 .slider3:hover .title h1 {
   animation: title 2s forwards;

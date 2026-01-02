@@ -1777,6 +1777,7 @@ h2 {
   /* THÊM 2 DÒNG DƯỚI ĐÂY */
   padding-top: 10px;   /* Tạo khoảng cách phía trên để không mất tiêu đề */
   overflow-y: auto;    /* Cho phép cuộn nội dung nếu thư quá dài trên Mobile */
+  overflow-x: auto;
 }
 .box-content .right .content .title {
   font-family: "Dancing Script", cursive;

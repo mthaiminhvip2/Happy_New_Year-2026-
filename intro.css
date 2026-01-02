@@ -1780,7 +1780,7 @@ h2 {
 }
 .box-content .right .content .title {
   font-family: "Dancing Script", cursive;
-  width: 95%;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -1788,8 +1788,9 @@ h2 {
   overflow: visible;
 }
 .box-content .right .content .title h1 {
-  /* margin-top: -40px; */
+  margin-top: 0 !important;
   transition: 0.5s;
+  font_size: 26px;
 }
 .slider3:hover .title h1 {
   animation: title 2s forwards;
